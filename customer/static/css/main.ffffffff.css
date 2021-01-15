@@ -1,0 +1,31 @@
+.disclaimer{
+    color:#ffcc29;font-size:10px;
+}
+.justify-content-center{
+    justify-content:center!important;
+}
+.navbar{
+    /*display:none*/
+}
+.navbar-expand{
+    flex-flow:row nowrap;
+    justify-content:flex-start
+}
+.navbar-footer{
+    padding:10px 5px;text-align:center
+}
+.bg-secondary{
+    background-color:#203864!important
+}
+.fixed-bottom{
+    bottom:0
+}
+@supports ((position:-webkit-sticky) or (position:sticky)){
+    .sticky-top{position:-webkit-sticky;position:sticky;top:0;z-index:1020}
+}
+.btn{
+    background-color: black;
+}
+.btn-secondary{
+
+}
