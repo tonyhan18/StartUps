@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <style>
+        .outer{
+            margin-top:10px;
+        }
+        .my_class{
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            display:inline-block;
+            margin-right:10px;
+            vertical-align: top;
+            padding-top:10px;
+            padding-left:10px;
+        }
+        /*자식*/
+        .my_class>.date {
+            background-color: red;
+        }
+        .my_class>.content{
+            background-color: blue;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function pre(){
+            $("#my_div").prepend($("#my_input").val());
+        }
+        function hello(){
+            $("#my_div1").html($("#my_input").val());
+            $("#cal_"+$("#my_date").val()).append("<div class='content'>"+$("#my_input").val()+"</div>");        
+        }
+    </script>
+    <input type="text" id="my_date" placeholder="헿"></input>
+    <input type="text" id="my_input" placeholder="뷁"></input>
+    <!--button onclick="prepend();">입력</-button-->
+    <button onclick="hello();">입력한 내용 확인</button>
+    <div class="outer">
+        <div id="cal_1" class="my_class">
+            <div class="date">
+                1
+            </div>
+        </div>
+        <div id="cal_2" class="my_class">
+            <div class="date">
+                2
+            </div>
+        </div>
+        <div id="cal_3" class="my_class">
+            <div class="date">
+                3
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
