@@ -1,0 +1,6 @@
+.o2
+.iead/
+*.pyc
+.venv
+db.sqlite3
+migrations/
