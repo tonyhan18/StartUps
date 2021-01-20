@@ -1,0 +1,11 @@
+<h1>I am groot</h1>
+
+<img src='http://49.50.165.32:8000/static/a.jpg'/>
+<link href='static/style.css' rel='stylesheet'>
+{{res}}
+<form method='post' action='/signup'>
+{% csrf_token %}
+	username:<input type="text" name="username"/>
+	email:<input type="text" name="email"/>
+	<input type="submit"/>
+</form>
