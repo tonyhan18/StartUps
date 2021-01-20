@@ -1,7 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http.response import HttpResponse
 from .models import Members
 # Create your views here.
+def login(req):
+    print(dir(req))
+    if(req.method=='GET'):
+        return render(req,'login.html')
+    elif(req.method=='POST'):
+        return redirect('/')
+
+
 def gu(req):
     num = req.GET.get('num','')
     if(num==''): return HttpResponse('<h1> gugu : 0'+num_gugu(0) +'</h1>')
