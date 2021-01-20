@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'lms',
     'payments',
     'customer',
+    'members',
 ]
 
 MIDDLEWARE = [
