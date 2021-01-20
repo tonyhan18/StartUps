@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'payments',
     'customer',
     'members',
+    'lottos',
 ]
 
 MIDDLEWARE = [

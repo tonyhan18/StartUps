@@ -20,4 +20,5 @@ urlpatterns = [
     path('rhksflwk/', admin.site.urls),
     path('cu',include("customer.urls")),
     path('',include("members.urls")),
+    path('lottos/',include('lottos.urls')),
 ]

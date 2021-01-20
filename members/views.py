@@ -4,8 +4,8 @@ from .models import Members
 # Create your views here.
 def gu(req):
     num = req.GET.get('num','')
-    if(num==''): return  HttpResponse('<h1> gugu : </h1>')
-    else: return HttpResponse('<h1> gugu : '+num_gugu(int(num)) +'</h1>')
+    if(num==''): return HttpResponse('<h1> gugu : 0'+num_gugu(0) +'</h1>')
+    else: return HttpResponse(f'<h1> gugu : {num}'+num_gugu(int(num)) +'</h1>')
 
 def num_gugu(num):
     ans='<br>'
