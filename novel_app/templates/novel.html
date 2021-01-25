@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ko">
+    <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <title>내가 니 애비다.</title>
+</head>
+
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#starwars">I'm your Father part2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#ironman">철맨</a>
+        </li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active show" id="starwars">
+            <div class="container">
+                <img src="/static/img/father.gif" style="width:50%;" class="card-img-top" />
+                <div class="jumbotron">
+                    <h1 class="display-3">I'm your Father part2</h1>
+                </div>
+                <p class="card-text">
+                    <strong>{{char2}}</strong> : 넌 패배했다. 더 이상의 저항은 부질없는 짓이다.<br> 오비완처럼 네 스스로를 파멸시키지 마라.<br><br>
+                    ({{char1}}, 저항하지만 다스 베이더가 루크의 손목을 자르고)<br><br>
+                    <strong>{{char2}}</strong> : 도망칠 곳은 없다. 내 손으로 널 죽이도록 하지 마라.<br><br>
+                    <strong>{{char1}}</strong> : ...<br><br>
+                    <strong>{{char2}}</strong> : 루크, 넌 아직 네 자신이 얼마나 중요한지를 모른다.<br> 넌 이제야 비로소 네 힘을 발견했을 뿐이다. <br>나와 뜻을
+                    함께해라.<br> 그리하면 내가 너의 수련을 완성시켜 주마. 우리가 힘을 합치면 <br>이 지긋지긋한 분쟁을 끝내고 전 은하계에 질서를 가져올 수 있다.<br><br>
+                    <strong>{{char1}}</strong> : 절대로 너에게 협력하지는 않아!<br><br>
+                    <strong>{{char2}}</strong> : 네가 다크사이드의 힘을 알았더라면... <br>오비완이 네 아버지에게 무슨 일이 있었는지 아무 말도 하지 않은
+                    모양이로구나.<br><br>
+                    <strong>{{char1}}</strong> : 충분히 말해 줬어! 네가 내 아버지를 죽였다고!<br><br>
+                <h2><strong>{{char2}}</strong> : <strong>아니다. 내가, 너의 아버지다.</strong></h2><br><br>
+                (임페리얼 마치가 무겁게 흘러나온다)<br><br>
+                <strong>{{char1}}</strong> : 아니야... 아니야...! 거짓말이야... 사실일 리 없어!!<br><br>
+                <strong>{{char2}}</strong> : 진실을 받아들이거라. 너도 진실이라는 것을 느끼고 있지 않느냐!<br><br>
+                <img src="/static/img/no.png" style="width:50%" /><br><br>
+                <h2><strong>{{char1}}</strong> : 아니야!!!!! 아니야...!</h2><br><br>
+                <strong>{{char2}}</strong> : 루크, 넌 황제를 쓰러뜨릴 수 있다. 황제 자신이 이걸 예견했단 말이다!<br> 이건 네 운명이다. 내게 오너라. 그리고 아버지와
+                아들이 함께, 이 은하계를 다스리는 것이다.<br><br>
+                <strong>{{char1}}</strong> : ...<br><br>
+                <strong>{{char2}}</strong> : 내 손을 잡거라. 다른 방도가 없지 않느냐<br><br>
+                (<strong>{{char1}}</strong>, <strong>{{char2}}</strong>를 노려보면서 손을 놓고 저 아래로 떨어진다.)<br><br>
+                </p>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="ironman">
+            <div class="container">
+                <img src="/static/img/ironman.png" style="width:50%;" class="card-img-top" />
+                <div class="jumbotron">
+                    <h1 class="display-3">철맨</h1>
+                </div>
+                <p class="card-text">
+                    <h1>{{char1}} : will return</h1>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

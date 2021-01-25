@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'customer',
     'members',
     'lottos',
+    'novel_app',
 ]
 
 MIDDLEWARE = [

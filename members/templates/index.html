@@ -4,8 +4,9 @@
 <link href='static/style.css' rel='stylesheet'>
 {{res}}
 <form method='post' action='/signup'>
-{% csrf_token %}
-	username:<input type="text" name="username"/>
-	email:<input type="text" name="email"/>
+	{% csrf_token %}
+	username: <input type="text" name="username"/>
+	email: <input type="text" name="email"/>
+	password: <input type="password" name="password"/>
 	<input type="submit"/>
 </form>
